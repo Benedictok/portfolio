@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NamePortfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1><img id="bannerimg" src="images/banner.png" alt="Something here"></h1>
+            <a href="link">Home</a>
+            <a href="/pages/project.html">Projects</a>
+            <a href="link">Deep Thoughts</a>
+             <a href="link">About me</a>
+        </div>
+    </header>
+   
+    
+<img class="pic" src="images/collage3.jpg"><br>
+    <div class="box">Hello this is my home page</div>
+ 
+    
+      
+</body>
+</html>
