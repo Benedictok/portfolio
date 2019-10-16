@@ -43,12 +43,12 @@
 }
 
 a:link {
-    color: red;
+    color: white;
 }
 
 /* visited link */
 a:visited {
-    color: white;
+    color: red;
 }
 
 /* mouse over link */
