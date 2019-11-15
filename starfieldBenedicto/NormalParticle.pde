@@ -1,10 +1,13 @@
 
-class NormalParticle implements Particle {
-  double x,y,speed,angle;
+class NormalParticle {
+ double speed, angle,x,y;
   int r,g,b;
-  NormalParticle(){
-    y = (int)(Math.random()*300);
-    x = (int)(Math.random()*300);
+  NormalParticle(int nx,int ny){
+    nx = (int)x;
+    ny = (int)y;
+    x = (int)(400);
+    y = (int)(300);
+    
     speed = Math.random()*10;
     angle = Math.PI*2*Math.random();
   }
@@ -13,7 +16,8 @@ class NormalParticle implements Particle {
     y+=(Math.sin(angle)*speed);
   }
   void show(){
-    fill(r,g,b);
-    ellipse(15,15,15,15);
+    int rand = (int)(Math.random()*255);
+    fill(rand,rand,rand);
+    ellipse((float)x,(float)y,10,10);
   }
 }
