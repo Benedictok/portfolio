@@ -2,7 +2,7 @@
 NormalParticle [] n;
 void setup(){
   size(800,600);
-  n = new NormalParticle[100];
+  n = new NormalParticle[300];
   for(int i=0; i < n.length;i++){
     n[i] = new NormalParticle(width/2,height/2);
   }

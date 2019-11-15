@@ -1,3 +1,3 @@
 
-//class particle interface {
-//}
+class particle interface {
+}
