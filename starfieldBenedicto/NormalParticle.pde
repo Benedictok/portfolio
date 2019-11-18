@@ -1,5 +1,5 @@
 
-class NormalParticle {
+class NormalParticle implements Particle{
  double  speed,angle,x,y;
   int r,g,b;
   NormalParticle(int nx,int ny){
@@ -11,11 +11,11 @@ class NormalParticle {
     speed = Math.random()*20;
     angle = Math.PI*2*Math.random();
   }
-  void move(){
+  public void move(){
     x+=(Math.cos(angle)*speed);
     y+=(Math.sin(angle)*speed);
   }
-  void show(){
+  public void show(){
     int rand = (int)(Math.random()*255);
     fill(rand,rand,rand);
     ellipse((float)x,(float)y,5,5);

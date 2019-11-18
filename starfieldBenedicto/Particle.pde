@@ -1,3 +1,5 @@
 
-class particle interface {
+interface Particle{
+  public void show();
+  public void move();
 }
