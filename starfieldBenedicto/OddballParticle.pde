@@ -8,7 +8,7 @@ class OddballParticle implements Particle{
     x = (int)(400);
     y = (int)(300);
     
-    speed = Math.random()*20;
+    speed = Math.random()*3;
     angle = Math.PI*2*Math.random();
   }
   public void move(){
@@ -16,10 +16,8 @@ class OddballParticle implements Particle{
     y+=(Math.sin(angle)*speed+1);
   }
   public void show(){
-    r+=(int)(Math.random()*255);
-    g+=(int)(Math.random()*204);
-    b+=0;
-    fill(r,g,b);
+   int rand = (int)(Math.random()*204);
+    fill((int(random(255))),(int(random(255))),(int(random(0))));
     ellipse((float)x,(float)y,5,5);
   }
 }

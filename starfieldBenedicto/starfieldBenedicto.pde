@@ -4,8 +4,11 @@ void setup(){
   size(800,600);
   n = new Particle[1000];
   for(int i=0; i < n.length;i++){
-    n[i] = new OddballParticle(width/2,height/2);
+    n[1] = new OddballParticle(width/2,height/2);
+    n[2] = new Jumbo(width/2,height/2);
+    n[i] = new NormalParticle(width/2,height/2);
   }
+  
     
 }
 

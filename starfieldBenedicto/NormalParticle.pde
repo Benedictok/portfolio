@@ -1,14 +1,14 @@
 
-class NormalParticle implements Particle{
+public class NormalParticle implements Particle{
  double  speed,angle,x,y;
   int r,g,b;
-  NormalParticle(int nx,int ny){
+  public NormalParticle(int nx,int ny){
     nx = (int)x;
     ny = (int)y;
     x = (int)(400);
     y = (int)(300);
     
-    speed = Math.random()*20;
+    speed = Math.random()*3;
     angle = Math.PI*2*Math.random();
   }
   public void move(){
