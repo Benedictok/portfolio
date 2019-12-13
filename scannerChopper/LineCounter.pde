@@ -26,6 +26,7 @@ public class LineCounter
     Scanner scan = new Scanner(line);
     while(scan.hasNext()){
      scan.nextInt();
+     count++;
     }
     return count;
   }
@@ -37,6 +38,6 @@ public class LineCounter
 
   public String toString()
   {
-    return getLine()+"/n"+getCount();
+    return getLine();
   }
 }
