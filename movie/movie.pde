@@ -1,19 +1,19 @@
 
 
- class Movie implements Comparable{
+ class movie implements Comparable {
   int rating;
   String review;
-  public Movie(int rt,String rv){
+  public movie(int rt,String rv){
     rating=rt;
     review=rv;
   }
-  public int getRating(){
+   public int getRating(){
     return rating;
   }
-  public String getReviews(){
+   public int getReviews(){
     return review;
   }
-  public String toString(){
+   String toString(){
     return rating+" " + review;
   
   }
