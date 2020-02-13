@@ -31,17 +31,13 @@ public class MovieList {
     }
     return count;
   }
-  public double getAverageScore(){
-    double total =0;
-    double ave =0;
-    List<Movie> movies=new ArrayList<Movie>();
-    
+public double getAverageScore(){
+    double total =0.0; 
     for(Movie m: movies){
-      total = total +m.getRating();
-      ave = ave + total/movies.size();
+      total = total + m.getRating();
+      return total/ (double)movies.size();
     } 
   }
-
   public String toString() {
     return ""+movies;
   }

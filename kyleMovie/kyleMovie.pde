@@ -12,6 +12,7 @@ PFont pf;
 
 void setup() {
   size(900, 100);
+  ml.getAverageScore();
   ml.loadMovies();
   pf=loadFont("data/Baskerville-Italic-48.vlw");
   textFont(pf, 50);
@@ -44,6 +45,8 @@ void showWords() {
     c=ml.countWords(w);
   }
   text(w+ " appears "+c+" times", 250, 50);
+  
 
   println(count);
+  
 }
