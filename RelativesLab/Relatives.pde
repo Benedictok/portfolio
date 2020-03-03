@@ -39,7 +39,7 @@ public class Relatives
     String output="";
     for(String key:map.keySet())
     {
-      output+=key+"is related to" + map.get(key);
+      output+=key+" is related to " + map.get(key)+ "\n";
     }
     return output;
 
